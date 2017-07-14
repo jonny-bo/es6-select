@@ -1,0 +1,66 @@
+html, body, {
+  width: 100%;
+  height: 100%;
+  // background: gray;
+}
+
+.L_lable {
+    height: 40px;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    padding: 2px 5px;
+    position: relative;
+    user-select :none;
+    margin-right: 5px;
+    .L_btn {
+        padding: 0;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: none;
+        background: #FFF;
+        outline:none;
+    }
+    &:hover {
+        .L_btn {
+            display: block;
+        }
+    }
+}
+.L_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.5rem;
+    .L_item {
+        position: relative;
+        cursor: pointer;
+        padding: 5px 10px;
+        &:hover {
+            background-color: #DDD;
+        }
+    }
+}
+.select {
+    border: 1px solid #DDD;
+    width: 300px;
+    min-height: 50px;
+    input {
+        border: none;
+        zoom:1;
+        outline: medium;
+        line-height: 40px;
+        font-size: 26px;
+        max-width: 200px;
+    }
+}
+
+#container {
+    width: 300px;
+    border: 1px solid #DDD;
+    height:300px; 
+    overflow:auto;
+    display: none;
+    position: relative;
+    clear: both;
+}
